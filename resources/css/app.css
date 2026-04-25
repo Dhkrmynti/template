@@ -95,7 +95,25 @@
         --color-on-tertiary-container: #ffdbd1;
     }
 
-    body {
+        html, body {
         @apply font-sans bg-background text-on-surface antialiased transition-colors duration-300;
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-outline-variant);
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--color-outline);
     }
 }
